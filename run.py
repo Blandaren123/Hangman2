@@ -82,3 +82,15 @@ while True:
                 time.sleep(2)
                 print("The secret word was: "+ secretWordList.upper())
                 break
+
+        continueGame = input("To play again, press Y, any other key to quit")
+        if continueGame.upper() == 'Y':
+            category = input("Please choose M for Marvels, D for DC")
+            userGuesslist = []
+            userGuesses = []
+            playGame = True
+        else:
+            print("I thank you for playing and hope to see you next time!")
+            break
+    else:
+        break
