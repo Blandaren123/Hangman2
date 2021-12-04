@@ -8,7 +8,8 @@ userGuesses = []
 playGame = True
 category = ""
 continueGame = "Y"
-
+"""Created container list for the random word in 2 different category and
+define som var that i used in the game"""
 name = input("Enter your Gametag:")
 print("Hello and Welcome", name.capitalize(), "to play Hangman game!!")
 time.sleep(1)
