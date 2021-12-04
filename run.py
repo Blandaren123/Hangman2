@@ -32,6 +32,12 @@ while True:
             print("Until next time, good luck")
             playGame = False
             break
+    
     if playGame:
         secretWordList = list(wordList)
         attempts = (len(secretWord)+ 2)
+
+        def printGuessedLetter():
+            print("Your secret word is: " + ''.join(userGuesslist))
+        
+
