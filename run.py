@@ -57,6 +57,15 @@ while True:
             else:
                 attempts -= 1
                 userGuesses.append(letter)
+                if letter in secretWordList:
+                    print("Your guess is correct!")
+                    if attempts > 0:
+                        print("You have", attempts, 'left!')
+                    for i in range(len(secretWordList)):
+                        if letter == secretWordList[i]:
+                            letterIndex = i
+                            userGuesslist[letterIndex] = letter.upper()
+                    printGuessedLetter()
 
         
 
