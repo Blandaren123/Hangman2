@@ -80,6 +80,8 @@ and you will get this message"""
                             letterIndex = i
                             userGuesslist[letterIndex] = letter.upper()
                     printGuessedLetter()
+""" here if you get the correct letter and it show you how many chances
+you have left"""
                 
                 else:
                     print("Sorry! Try again")
