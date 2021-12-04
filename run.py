@@ -82,13 +82,14 @@ and you will get this message"""
                     printGuessedLetter()
 """ here if you get the correct letter and it show you how many chances
 you have left"""
-                
+
                 else:
                     print("Sorry! Try again")
                     if attempts > 0:
                         print("You have", attempts, 'left!')
                     printGuessedLetter()
-
+# if wrong letter then this show
+            
             joinedList = ''.join(userGuesslist)
             if joinedList.upper() == wordList.upper():
                 print("GoodJob!! You WON!!")
@@ -98,6 +99,9 @@ you have left"""
                 time.sleep(1)
                 print("The secret word was: "+ wordList.upper())
                 break
+""" This is win or lose logic goes in, computer
+compare if you have same word as the secret words
+or not when all the attemps made"""
 
         continueGame = input("To play again, press Y, any other key to quit:")
         if continueGame.upper() == 'Y':
