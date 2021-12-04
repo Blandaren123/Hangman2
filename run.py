@@ -27,7 +27,7 @@ and where you can enter your name"""
 
 while True:
 
-    while True:
+    while True:   # random generator from differentlist 2 different list
         if category.upper() == 'M':
             secretWord = random.choice(marvelHeroes)
             break
@@ -35,18 +35,18 @@ while True:
             secretWord = random.choice(dcHeroes)
             break
         else:
-            category = input("Choose M for Marvel / D for DC or X to exit")
+            category = input("Choose M for Marvel / D for DC or X to exit:")
 
         if category.upper() == 'X':
             print("Until next time, good luck")
-            playGame = False
+            playGame = False  # if you choose X the game gets false and stop
             break
 
     if playGame:
         secretWordList = list(secretWord)
         attempts = (len(secretWord) + 2)
 
-        def printGuessedLetter():
+        def printGuessedLetter():  # this print your guess letter
             print("Your word is: " + ''.join(userGuesslist))
         for n in secretWordList:
             userGuesslist.append('_')
@@ -61,7 +61,7 @@ while True:
             if letter in userGuesses:
                 print("You have guessed this letter, try another.")
 
-            else:
+            else:  # show how much attempt you have left
                 attempts -= 1
                 userGuesses.append(letter)
                 if letter in secretWordList:
@@ -74,7 +74,7 @@ while True:
                             userGuesslist[letterIndex] = letter.upper()
                     printGuessedLetter()
 
-                else:
+                else:  # when you choose wrong letter and attempt left
                     print("Sorry! Try again.")
                     if attempts > 0:
                         print("You have", attempts, 'left!')
@@ -83,7 +83,7 @@ while True:
             if joinedList.upper() == secretWord.upper():
                 print("GoodJob!! You WON!!")
                 break
-            elif attempts == 0:
+            elif attempts == 0:  # no attempt left it tells you that
                 print("You guessed too many times!, better luck next time.")
                 print("The secret word was: " + secretWord.upper())
                 break
@@ -92,7 +92,7 @@ while True:
             category = input("Please choose M for Marvels, D for DC:")
             userGuesslist = []
             userGuesses = []
-            playGame = True
+            playGame = True  # if press y the game will restart play again
         else:
             print("I thank you for playing and hope to see you next time!")
             break
