@@ -65,7 +65,9 @@ end show what words you have atlast"""
 
             if letter in userGuesses:
                 print("This letter is already guessed, try something else..")
-
+""" The game begins and you put in the first letter and if it was same letter
+and you will get this message"""
+            
             else:
                 attempts -= 1
                 userGuesses.append(letter)
