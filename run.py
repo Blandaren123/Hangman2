@@ -39,6 +39,9 @@ while True:
             print("Until next time, good luck")
             playGame = False
             break
+""" This is were random rules come in when you describe which category you have choose
+then the computer take a random from the list either dcheroes or marvelheroes,
+it depends which one you choose"""    
     
     if playGame:
         secretWordList = list(wordList)
@@ -52,6 +55,8 @@ while True:
         printGuessedLetter()
 
         print("Each guess for this word is limited to:", attempts)
+""" here is for how many attempts you have and when the game
+end show what words you have atlast"""
 
         while True:
 
