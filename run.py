@@ -23,5 +23,11 @@ while True:
         elif category.upper() == 'D':
             wordList = random.choice(dcHeroes)
             break
-
+        else:
+            category = input("Please choose M for Marvels, D for DC or E to exit")
+        
+        if category.upper() == 'E':
+            print("Until next time, good luck")
+            playGame = False
+            break
     
