@@ -1,6 +1,7 @@
 import random, time
 """import random for random choice and 
 time for some time delays between the text"""
+
 marvelHeroes = ['thor', 'loki', 'vision', 'deadpool', 'hawkeye', 'mantis', 'antman']
 dcHeroes = ['batman', 'superman', 'flash', 'cyborg', 'robin', 'aquaman', 'joker']
 userGuesslist = []
@@ -10,6 +11,7 @@ category = ""
 continueGame = "Y"
 """Created container list for the random word in 2 different category and
 define som var that i used in the game"""
+
 name = input("Enter your Gametag:")
 print("Hello and Welcome", name.capitalize(), "to play Hangman game!!")
 time.sleep(1)
@@ -19,6 +21,8 @@ print("Each guess may be only one letter. Remember to press 'enter' after each g
 time.sleep(2)
 print("Good luck and have fun!")
 time.sleep(1)
+"""Game info, rules and put some paus in between the text so easier to read,
+and where you can enter your name"""
 
 while True:
     while True:
