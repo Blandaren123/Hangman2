@@ -1,4 +1,6 @@
 import random, time
+"""import random for random choice and 
+time for some time delays between the text"""
 marvelHeroes = ['thor', 'loki', 'vision', 'deadpool', 'hawkeye', 'mantis', 'antman']
 dcHeroes = ['batman', 'superman', 'flash', 'cyborg', 'robin', 'aquaman', 'joker']
 userGuesslist = []
@@ -11,11 +13,11 @@ name = input("Enter your Gametag:")
 print("Hello and Welcome", name.capitalize(), "to play Hangman game!!")
 time.sleep(1)
 print("You must guess the word chosen by the computer to win the game.")
-time.sleep(3)
-print("Each guess may be only one letter. Remember to press 'enter' after each guess.")
-time.sleep(3)
-print("Good luck and have fun!")
 time.sleep(2)
+print("Each guess may be only one letter. Remember to press 'enter' after each guess.")
+time.sleep(2)
+print("Good luck and have fun!")
+time.sleep(1)
 
 while True:
     while True:
@@ -35,10 +37,10 @@ while True:
     
     if playGame:
         secretWordList = list(wordList)
-        attempts = (len(secretWord)+ 2)
+        attempts = (len(wordList)+ 2)
 
         def printGuessedLetter():
-            print("Your secret word is: " + ''.join(userGuesslist))
+            print("Your word is: " + ''.join(userGuesslist))
         
         for n in secretWordList:
             userGuesslist.append('_')
@@ -46,7 +48,7 @@ while True:
 
         print("Each guess for this word is limited to:", attempts)
 
-        while true:
+        while True:
 
             print("guess a letter:")
             letter = input()
@@ -74,18 +76,18 @@ while True:
                     printGuessedLetter()
 
             joinedList = ''.join(userGuesslist)
-            if joinedList.upper() == secretWordList.upper():
+            if joinedList.upper() == wordList.upper():
                 print("GoodJob!! You WON!!")
                 break
             elif attempts == 0:
-                printGuessedLetter("You guessed too many times!, sorry, better luck next time.")
-                time.sleep(2)
-                print("The secret word was: "+ secretWordList.upper())
+                print("You guessed too many times!, sorry, better luck next time.")
+                time.sleep(1)
+                print("The secret word was: "+ wordList.upper())
                 break
 
-        continueGame = input("To play again, press Y, any other key to quit")
+        continueGame = input("To play again, press Y, any other key to quit:")
         if continueGame.upper() == 'Y':
-            category = input("Please choose M for Marvels, D for DC")
+            category = input("Please choose M for Marvels, D for DC:")
             userGuesslist = []
             userGuesses = []
             playGame = True
