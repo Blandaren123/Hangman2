@@ -73,5 +73,12 @@ while True:
                         print("You have", attempts, 'left!')
                     printGuessedLetter()
 
-        
-
+            joinedList = ''.join(userGuesslist)
+            if joinedList.upper() == secretWordList.upper():
+                print("GoodJob!! You WON!!")
+                break
+            elif attempts == 0:
+                printGuessedLetter("You guessed too many times!, sorry, better luck next time.")
+                time.sleep(2)
+                print("The secret word was: "+ secretWordList.upper())
+                break
