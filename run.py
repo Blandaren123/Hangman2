@@ -1,6 +1,8 @@
 import random, time
 marvelHeroes = ['thor', 'loki', 'vision', 'deadpool', 'hawkeye', 'mantis', 'antman']
 dcHeroes = ['batman', 'superman', 'flash', 'cyborg', 'robin', 'aquaman', 'joker']
+userGuesslist = []
+userGuesses = []
 playGame = True
 category = ""
 continueGame = "Y"
@@ -30,4 +32,6 @@ while True:
             print("Until next time, good luck")
             playGame = False
             break
-    
+    if playGame:
+        secretWordList = list(wordList)
+        attempts = (len(secretWord)+ 2)
