@@ -66,6 +66,12 @@ while True:
                             letterIndex = i
                             userGuesslist[letterIndex] = letter.upper()
                     printGuessedLetter()
+                
+                else:
+                    print("Sorry! Try again")
+                    if attempts > 0:
+                        print("You have", attempts, 'left!')
+                    printGuessedLetter()
 
         
 
