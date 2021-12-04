@@ -26,7 +26,7 @@ while True:
             wordList = random.choice(dcHeroes)
             break
         else:
-            category = input("Please choose M for Marvels, D for DC or E to exit")
+            category = input("Please choose M for Marvels, D for DC or E to exit:")
         
         if category.upper() == 'E':
             print("Until next time, good luck")
@@ -39,5 +39,15 @@ while True:
 
         def printGuessedLetter():
             print("Your secret word is: " + ''.join(userGuesslist))
+        
+        for n in secretWordList:
+            userGuesslist.append('_')
+        printGuessedLetter()
+
+        print("Each guess for this word is limited to:", attempts)
+
+        while true:
+
+            print
         
 
