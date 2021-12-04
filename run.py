@@ -48,6 +48,15 @@ while True:
 
         while true:
 
-            print
+            print("guess a letter:")
+            letter = input()
+
+            if letter in userGuesses:
+                print("This letter is already guessed, try something else..")
+
+            else:
+                attempts -= 1
+                userGuesses.append(letter)
+
         
 
