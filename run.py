@@ -1,9 +1,10 @@
-import random, time
-"""import random for random choice and 
+import random
+import time
+"""import random for random choice and
 time for some time delays between the text"""
 
-marvelHeroes = ['thor', 'loki', 'vision', 'deadpool', 'hawkeye', 'mantis', 'antman']
-dcHeroes = ['batman', 'superman', 'flash', 'cyborg', 'robin', 'aquaman', 'joker']
+marvelHeroes = ['thor', 'loki', 'vision', 'hawkeye', 'mantis', 'antman']
+dcHeroes = ['batman', 'superman', 'cyborg', 'robin', 'aquaman', 'joker']
 userGuesslist = []
 userGuesses = []
 playGame = True
@@ -17,7 +18,7 @@ print("Hello and Welcome", name.capitalize(), "to play Hangman game!!")
 time.sleep(1)
 print("You must guess the word chosen by the computer to win the game.")
 time.sleep(2)
-print("Each guess may be only one letter. Remember to press 'enter' after each guess.")
+print("Each guess may be only one letter. Press 'enter' after each guess.")
 time.sleep(2)
 print("Good luck and have fun!")
 time.sleep(1)
@@ -25,84 +26,67 @@ time.sleep(1)
 and where you can enter your name"""
 
 while True:
+
     while True:
         if category.upper() == 'M':
-            wordList = random.choice(marvelHeroes)
+            secretWord = random.choice(marvelHeroes)
             break
         elif category.upper() == 'D':
-            wordList = random.choice(dcHeroes)
+            secretWord = random.choice(dcHeroes)
             break
         else:
-            category = input("Please choose M for Marvels, D for DC or E to exit:")
-        
-        if category.upper() == 'E':
+            category = input("Choose M for Marvel / D for DC or X to exit")
+
+        if category.upper() == 'X':
             print("Until next time, good luck")
             playGame = False
             break
-""" This is were random rules come in when you describe which category you have choose
-then the computer take a random from the list either dcheroes or marvelheroes,
-it depends which one you choose"""    
-    
+
     if playGame:
-        secretWordList = list(wordList)
-        attempts = (len(wordList)+ 2)
+        secretWordList = list(secretWord)
+        attempts = (len(secretWord) + 2)
 
         def printGuessedLetter():
             print("Your word is: " + ''.join(userGuesslist))
-        
         for n in secretWordList:
             userGuesslist.append('_')
         printGuessedLetter()
 
         print("Each guess for this word is limited to:", attempts)
-""" here is for how many attempts you have and when the game
-end show what words you have atlast"""
-
         while True:
 
-            print("guess a letter:")
+            print("Guess a letter:")
             letter = input()
 
             if letter in userGuesses:
-                print("This letter is already guessed, try something else..")
-""" The game begins and you put in the first letter and if it was same letter
-and you will get this message"""
-            
+                print("You have guessed this letter, try another.")
+
             else:
                 attempts -= 1
                 userGuesses.append(letter)
                 if letter in secretWordList:
-                    print("Your guess is correct!")
+                    print("Your guess is Correct!")
                     if attempts > 0:
-                        print("You have", attempts, 'left!')
+                        print("You have ", attempts, 'left!')
                     for i in range(len(secretWordList)):
                         if letter == secretWordList[i]:
                             letterIndex = i
                             userGuesslist[letterIndex] = letter.upper()
                     printGuessedLetter()
-""" here if you get the correct letter and it show you how many chances
-you have left"""
 
                 else:
-                    print("Sorry! Try again")
+                    print("Sorry! Try again.")
                     if attempts > 0:
                         print("You have", attempts, 'left!')
                     printGuessedLetter()
-# if wrong letter then this show
-            
             joinedList = ''.join(userGuesslist)
-            if joinedList.upper() == wordList.upper():
+            if joinedList.upper() == secretWord.upper():
                 print("GoodJob!! You WON!!")
                 break
             elif attempts == 0:
-                print("You guessed too many times!, sorry, better luck next time.")
-                time.sleep(1)
-                print("The secret word was: "+ wordList.upper())
+                print("You guessed too many times!, better luck next time.")
+                print("The secret word was: " + secretWord.upper())
                 break
-""" This is win or lose logic goes in, computer
-compare if you have same word as the secret words
-or not when all the attemps made"""
-
         continueGame = input("To play again, press Y, any other key to quit:")
         if continueGame.upper() == 'Y':
             category = input("Please choose M for Marvels, D for DC:")
@@ -114,4 +98,3 @@ or not when all the attemps made"""
             break
     else:
         break
-"""Check if you want to play agian or the loop will break out"""
