@@ -94,7 +94,7 @@ while True:
             userGuesses = []
             playGame = True  # if press y the game will restart play again
         else:
-            print("I thank you for playing and hope to see you next time!")
+            print("I thank you for playing and hope to see you next time!!")
             break
     else:
         break
