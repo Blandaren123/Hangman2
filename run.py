@@ -20,6 +20,7 @@ print("You must guess the word chosen by the computer to win the game.")
 time.sleep(2)
 print("Each guess may be only one letter. Press 'enter' after each guess.")
 time.sleep(2)
+print("Hint! Marvel heroes/villain or DC heroes/villain")
 print("Good luck and have fun!")
 time.sleep(1)
 """Game info, rules and put some paus in between the text so easier to read,
