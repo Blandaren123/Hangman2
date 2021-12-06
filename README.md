@@ -43,11 +43,13 @@ You win if all your guesses are correct
 
 
 # Futures implement
-  * I want to add time limit and seee how many points you can get
+  * More category to choose between
+  * Build in score board that shows how many times you or computer win
+  * Picture of hangman with detail of when you guess wrong letter
 
 
-# Typography and color scheme
-  * Color: white and blue   
+# Data model
+  ![image](./views/screens/datamodel.PNG) 
 
 # wireframes
 - __wireframes desktop__
