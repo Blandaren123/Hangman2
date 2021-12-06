@@ -74,16 +74,23 @@ No Unfixed Bugs
 ![image](./views/screens/pep8.PNG) 
 
 
-
-![image info](./assets/images/lighthouse.PNG)
-
 # Deployment
 - This site was published through GitHub pages. To promote the site, follow these steps:
 1. In the GitHub repository, navigate to the Settings tab
 2. From the source section drop-down menu, select the Main Branch
-3. When the main branch is selected, a detailed ribbon display will show to indicate the successful deployment.
 
-Here is the link [Rock Paper Scissor](https://blandaren123.github.io/Rock-paper-scissor/index.html)
+
+- Project through heroku terminal
+1. Go to Heroku.com and log in
+2. Create App and give it a name
+3. Go to Settings and go to Config Vars and set KEY:port and Value:8000 and ADD
+4. add buildpack first Heroku/python and then Heroku/nodejs
+5. then go to Deploy and choose deployment method and choose github
+6. app connected and Choose your repository and Connect
+7. Go down to Manual deploy and klick Deploy Branch 
+8. klick view!!
+
+Here is the link [HANGMAN GAME](https://hangman2odd.herokuapp.com/)
 
 
 # Credits
