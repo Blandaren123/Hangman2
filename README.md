@@ -27,12 +27,12 @@ You win if all your guesses are correct
 
 ![image](./views/screens/feature2.PNG)
 
-- __The Result/rule__
-  * Your table score tells you whether or not you have taken a point
-  * There is a text under the score board that tells you what happens if you win, lose, or draw based on your choices
-  * You get one point when you win, but the computer gets one if you lose, and if you draw, nobody gets a point
+- __The Result__
+  * Tell if you have already guess same letter
+  * Tell you what word you have get at the end
+  * Tell if you win or lose and the secret word
 
-![image](./assets/images/result.PNG) 
+![image](./views/screens/result.PNG) 
 
 - __The Reset Button__
   * You can reset the score and the game by pressing the reset button
