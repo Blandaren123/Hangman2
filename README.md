@@ -6,6 +6,11 @@ In the event that you lose, you can try again if you are victorious against the 
 
 ![image](./views/screens/olikask.PNG)
 
+# How to play
+A computer, the "host," creates/generate a secret word,
+Then YOU try to guess the word by asking what letters are in it.
+Every wrong guess, however, puts them one step closer to losing.
+
 # Features
 - __Header__
   * The game name is listed in the header
