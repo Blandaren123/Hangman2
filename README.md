@@ -34,10 +34,11 @@ You win if all your guesses are correct
 
 ![image](./views/screens/result.PNG) 
 
-- __The Reset Button__
-  * You can reset the score and the game by pressing the reset button
+- __Play again__
+  * A choose if you want to play again or exit when the games are done
 
-  ![image](./assets/images/reset.PNG) 
+  
+  ![image](./views/screens/playagain.PNG) 
 
 
 
