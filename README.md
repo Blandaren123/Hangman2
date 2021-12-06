@@ -1,29 +1,31 @@
 # Hangman Game!
-It is a game of hangman about Marvel Heroes and DC Heroes that you play against the computer.
+It is a game of hangman about Marvel Heroes and DC Heroes that you play against the computer. <br />
 
-If you can guess the right heroes/villains with one letter before you run out of guesses, you win,
+If you can guess the right heroes/villains with one letter before you run out of guesses, you win, <br />
 In the event that you lose, you can try again if you are victorious against the computer
 
 ![image](./views/screens/olikask.PNG)
 
 # How to play
-A computer, the "host," creates/generate a secret word,
-Then YOU try to guess the word by asking what letters are in it.
-Every wrong guess, however, puts them one step closer to losing.
+A computer, the "host," creates/generate a secret word, <br />
+Then YOU try to guess the word by asking what letters are in it. <br />
+Every wrong guess, however, puts them one step closer to losing and <br />
+Each right guess brings them closer to winning
+You win if all your guesses are correct
 
 # Features
-- __Header__
-  * The game name is listed in the header
-  * The background is all white with a blue color text
+- __Choose category__
+  * You can Choose 2 different category
+  * Computer generate different Hero/villain
 
-![image](./assets/images/header.PNG)
+![image](./views/screens/feature1.PNG)
 
-- __The Games options__
-  * There are 3 images of stone paper and scissors that you can click on
-  * To match the rest of the site, the background is all white
-  * It shows exactly what it is in the image
+- __Show how many chance you have left__
+  * Every guessed letter show how many chances you have left
+  * Tell you if you have guessed right or wrong
+  * How many you had from the beginning
 
-![image](./assets/images/options.PNG)
+![image](./views/screens/feature2.PNG)
 
 - __The Result/rule__
   * Your table score tells you whether or not you have taken a point
