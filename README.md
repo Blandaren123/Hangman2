@@ -51,57 +51,29 @@ You win if all your guesses are correct
 # Data model
   ![image](./views/screens/datamodel.PNG) 
 
-# wireframes
-- __wireframes desktop__
-![image info](./assets/images/wireframes1.PNG)
-
-- __wireframes phone__
-![image info](./assets/images/wireframes2.PNG)
-
-
-# Technology
-- Wireframes for layout on desktop and mobile in Balsamiq tools.
-- This site was laid out and structured using HTML.
-- Style and appearance using CSS.
-- Javascript for game.
-- Use Github to deploy the project and read the README.
-- Gitpod is used for coding.
-- CodeInstuite project, YouTube, and Google for tutorials and troubleshooting.
-- Skype for contact with the mentor for tips and advice. 
-- jigsaw, W3c and lighthouse for testing and troubleshoot.
 
 # Testing
 
-- I tested this game on Microsoft edge and Chrome and it seems to works great.
-- The game is playable on desktops, iPads, and phones when I tested.
-- I can confirmed the game is working fine.
-- Each rock, paper, and stone button works fine on mobile and desktop
-- The reset button works and resets the game and refreshes the site
+- Tested the code through PEP8 without any problem
+- tested the game on Heroku terminal and it working fine
 - I confirmed the games were easy to understand and play
 
 # Bugs
-- Didnt get the inner messsage to work was missing a .
+- Took a while to realise that made the container with() instead of []
 
-![image info](./assets/images/bug1.PNG)
+![image](./views/screens/misstake.PNG) 
 
-- But after google and searching figured out and add the . and everything worked
+- But after google and searching figured out and change the () to [] and everything worked.
 
-
-![image info](./assets/images/bug2.PNG)
 
 # Unfixed Bugs
 No Unfixed Bugs
 
 # Validator Testing
+- PEP8 no error
+![image](./views/screens/pep8.PNG) 
 
-HTML
-- No Error on the official [w3c HTML Validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fblandaren123.github.io%2FRock-paper-scissor%2Findex.html)
 
-CSS
-- No Error on the official [jigsaw CSS validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fblandaren123.github.io%2FRock-paper-scissor%2Findex.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
-
-Accessbility
-- It's confirmed that the colors and fonts chosen are readable in devtools when tested through Lighthouse
 
 ![image info](./assets/images/lighthouse.PNG)
 
