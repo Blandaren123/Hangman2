@@ -96,10 +96,12 @@ Here is the link [HANGMAN GAME](https://hangman2odd.herokuapp.com/)
 # Credits
 
 Contents 
-- How to create function and badge for rock paper scissor from youtube [here](https://www.youtube.com/watch?v=Qqy8Ov3NWvQ)
-- Taken some code from [Codepen.io](https://codepen.io/nicolarb/pen/PoYvamR) and remake it!
+- How to create function, import and tutorial from youtube for hang hangman [here](https://www.youtube.com/watch?v=OSdpbA-oL_g)
+- Taken some code from [icomag.com](https://icodemag.com/creating-a-simple-hangman-game-in-python/) and rewrite it!
+- Taken som ideer from [mardiyyah.medium.com](https://mardiyyah.medium.com/a-simple-hangman-learnpythonthroughprojects-series-10-fedda58741b)
+- Code instuites Template
 
-Media
-- The image for button and about was taken from Wikipedia [Rock](https://en.wikipedia.org/wiki/Rock_paper_scissors#/media/File:Rock-paper-scissors_(rock).png) [paper](https://en.wikipedia.org/wiki/Rock_paper_scissors#/media/File:Rock-paper-scissors_(paper).png) [Scissor](https://en.wikipedia.org/wiki/Rock_paper_scissors#/media/File:Rock-paper-scissors_(scissors).png)
+# Media
+- Data model [model](https://www.clear.rice.edu/comp212/08-spring/labs/06/)
 
 
