@@ -57,6 +57,9 @@ You win if all your guesses are correct
 - Tested the code through PEP8 without any problem
 - tested the game on Heroku terminal and it working fine
 - I confirmed the games were easy to understand and play
+- Tested that you must write letter to Work 
+
+![image](./views/screens/testing.PNG)
 
 # Bugs
 - Took a while to realise that made the container with() instead of []
