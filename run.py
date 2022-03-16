@@ -13,8 +13,7 @@ continueGame = "Y"
 """Created container list for the random word in 2 different category and
 define som var that i used in the game"""
 
-name = input("Enter your Gametag:")
-print("Hello and Welcome", name.capitalize(), "to play Hangman game!!")
+print("Hi and Welcome to Guess Word Game")
 time.sleep(1)
 print("You must guess the word chosen by the computer to win the game.")
 time.sleep(2)
