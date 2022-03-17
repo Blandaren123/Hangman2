@@ -93,7 +93,7 @@ No Unfixed Bugs
 7. Go down to Manual deploy and klick Deploy Branch 
 8. klick view!!
 
-Here is the link [HANGMAN GAME](https://hangman2odd.herokuapp.com/)
+Here is the link [Guessing Game](https://hangman2odd.herokuapp.com/)
 
 
 # Credits
